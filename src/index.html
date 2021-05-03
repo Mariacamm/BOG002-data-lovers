@@ -2,11 +2,91 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="whidth=device-width, initial-scale=, maximu-scale=1, minimum-scale=1.0">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body>
+
+    <!-- PANTALLA PRINCIPAL -->
+    <section id="Principal">
+    <header>
+      <img src="Recursos/TituloRM.png" id="TituloRM">
+    </header>
+
+
+    <button id="Personajes" class="CajasPrincipal">
+      <img class="ImgCaja" src="Recursos/Personajes.jpg">
+      <p class="Titulos" id="Personajestxt">PERSONAJES</p>
+    </button>
+
+    <article>
+      <p id="descripcion">Rick es un brillante científico un tanto borracho que secuestra a su irritable nieto adolescente Morty para vivir aventuras en otros mundos y en dimensiones alternativas.</p>
+    </article>
+
+
+    <button id="Episodios" class="CajasPrincipal">
+      <img class="ImgCaja" src="Recursos/Episodios.jpg">
+      <p class="Titulos" id="EpisodiosTxt">EPISODIOS</p>
+    </button>
+
+
+  </section>
+
     <div id="root"></div>
+
+    <header id="PantallaPersonajes">
+      
+      <div id="Filtros">
+      <p id="TituloPersonajes">PERSONAJES</p>
+      <input type="text" id="buscador" class="Select" placeholder="Busca el personaje">
+
+      <select name="Organizar" id="Organizar" class="Select">
+        <option value="1">Organizar</option>        
+        <option value="AZ">A-Z</option>        
+        <option value="ZA">Z-A</option>        
+      </select>
+      
+      <select name="Especie" class="Select" id="Especies">
+        <option>Especie</option>
+        <option>Human</option>        
+        <option>Alien</option>        
+        <option>Humanoid</option>   
+        <option>Poopybutthole</option>     
+        <option>Mytholog</option>   
+        <option>Animal</option>
+        <option>Vampire</option>
+        <option>Robot</option>
+        <option>Cronenberg</option>
+        <option>Disease</option>
+        <option>Parasite</option>
+        <option>unknown</option>
+     </select>
+
+     <select name="Genero" id="Genero" class="Select">
+       <option>Genero</option>
+       <option>Male</option>
+       <option>Female</option>
+       <option>unknown</option>
+     </select>
+    </div>
+    </header>
+
+    <section id="Pantalla2" class="todosPersonajes">
+    </section>
+
+    
+  
+    <footer>
+      <div id="footer">
+        <p> María Camila Martínez © DataLovers.Laboratoria</p>
+        <img src="">
+        <img src="">
+        <img src="">
+      </div>
+    </footer>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
